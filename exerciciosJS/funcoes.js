@@ -14,6 +14,7 @@ function saudar(nome, idade, cidade) {
 saudar();
 saudar("Maíra", 29, "Recife");
 
+//Terceira função de teste
 function formatarValor (valor) { //O valor nesse caso não é uma variável, é um parâmetro
     return `R$ ${valor.toFixed(2).replace(".", ",")}`; //toFixed também é uma função, porém já pronta, onde aqui estou determinando as casas decimais. E o replace vai realizar a substituição do ponto pela vírgula.
 }
