@@ -26,3 +26,31 @@ for (let i = 0; i < numeros.length; i++) { // Percorre o array e mostra apenas o
     console.log(numeros[i] + " é par");
   }
 }
+
+//Segundo dia de aula, novas práticas.
+
+//Crie um Array com 5 nomes em minúsculo, em seguida utilize o .map para transformar em letras maiúsculas com no toUpperCase(). Utilize Arrow function.
+const nomes = ["arthur", "vic", "adriana", "mateus", "junior"];
+
+const nomesMaiusculos = nomes.map(nome => nome.toUpperCase()); //.map() percorre cada item do array e aplica a função de transformação. nome => nome.toUpperCase() é uma arrow function que converte o nome para maiúsculas.
+
+console.log(nomesMaiusculos);
+
+//Utilize o mesmo Array e ordene os nomes em ordem alfabética utilizando o .sort.
+
+nomesMaiusculos.sort();
+console.log(nomesMaiusculos);
+
+//Peça pro usuário digitar 3 números (data do aniversário) armazene esses 3 números em um array em seguida personalize no formato de data utilizando o .join.
+const dia = prompt("Digite o dia do seu aniversário:");
+const mes = prompt("Digite o mês do seu aniversário:");
+const ano = prompt("Digite o ano do seu aniversário:");
+
+const dataArray = [dia, mes, ano];
+
+const dataFormatada = dataArray.join('/');// Formata a data no estilo DD/MM/AAAA
+
+console.log("Data de aniversário formatada:", dataFormatada);
+
+
+
